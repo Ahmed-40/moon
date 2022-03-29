@@ -1,0 +1,60 @@
+
+
+
+
+
+
+
+@media only screen and (max-width: 991px){
+
+    .mobile-java{
+        display: block;
+     }
+     .banner-section .hero-btn {
+        background-color: blue;
+        color: #fff;    
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 992px){
+
+    .mobile-java{
+        display: none;
+     
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .mobile-nav-wrapper {
+        background-color: rgb(78, 26, 173);
+        right: 137px; 
+    }
+    .banner-section .hero-text h1 {
+        font-size: 35px;
+        line-height: 40px;
+        padding-bottom: 5px;
+        padding-left: 110px;
+    }
+    .banner-section .hero-btn {
+        padding: 15px 10px;
+        margin-left: 110px;
+    }
+    .banner-section .hero-text p {
+        line-height: 25px;
+        padding-top: 0px;
+        padding-bottom: 20px;   
+        padding-left: 110px;
+    }
+    .slider-card-item {
+        padding: 15px;
+    }
+    * {
+                margin-bottom: 10px;
+    }
+
+
+}

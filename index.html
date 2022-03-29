@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Goggle Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./CSS/vendor/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+
+
+<body id="scroll">
+    <!-- Preloader section start -->
+    <!-- <div class="preloader">
+        <div class="load">
+            <img src="./CSS/image/Spinner-5.gif" alt="">
+        </div>
+    </div> -->
+    <!-- Preloader section end -->
+
+    <!-- Social section start -->
+    <div class="floating-social-share">
+        <button class="open-share-btn">Social Share</button>
+        <div class="social-btns">
+            <button class="social sbtn11"><i class="fa fa-facebook"></i></button>
+            <button class="social sbtn22"><i class="fa fa-twitter"></i></button>
+            <button class="social sbtn33"><i class="fa fa-google"></i></button>
+            <button class="social sbtn44"><i class="fa fa-linkedin"></i></button>
+        </div>
+    </div>
+    <!-- Social section end -->
+
+
+    <!-- Slide section start -->
+    <div class="slide-menu">
+        <button class="open-btn">
+            <img src="./CSS/image/gear.png" alt="gear">
+        </button>
+        <div class="color-btns">
+            <button class="s-btn btn1"></button>
+            <button class="s-btn btn2"></button>
+            <button class="s-btn btn3"></button>
+            <button class="s-btn btn4"></button>
+        </div>
+    </div>
+    <!-- Slide section end -->
+
+    <!-- Header section start -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <nav class="navbar navbar-expand-lg navbar-light pt-20">
+                        <a class="navbar-brand" href="#">
+                            <img src="./CSS/image/Logo.svg" alt="">
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto">
+                                <li class="dropdown-trogle">
+                                    <a class="nav-link" href="#">Features</a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-content">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Feature1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Feature2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Feature3</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Feature4</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Feature5</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Integrations</a>
+                                </li>
+                                <li class="dropdown-trogle">
+                                    <a class="nav-link" href="#">Solution</a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-content">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Solution1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Solution2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Solution3</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Solution4</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Solution5</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Resource</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-btn">
+                            <a href="#" class="btn btn-outline">Log in</a>
+                            <a href="#" class="h-btn">Try Free</a>
+                        </div>
+
+                        <div class="mobile-java">
+                            <div class="mobile-nav-wrapper">
+                                <a href="javascipt:void(0)" class="close-btn" onclick="CloseNavigation()">&times;</a>
+                                <div class="nav-content">
+                                    <a class="nav-link" href="#">Features</a>
+                                    <a class="nav-link" href="#">Pricing</a>
+                                    <a class="nav-link" href="#">Integrations</a>
+                                    <a class="nav-link" href="#">Solution</a>
+                                    <a class="nav-link" href="#">Resource</a>
+                                </div>
+                            </div>
+                            <button class="open-btn" onclick="OpenNavigation()" type="button">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+
+                        <div class="search-java">
+                            <div class="mobile-search-wrapper">
+                                <a href="javascipt:void(0)" class="close-btn2" onclick="closeNavigation2()">&times;</a>
+                                <div class="mobile-search">
+                                    <input type="text" placeholder="Type Your Text">
+                                </div>
+                            </div>
+                            <button class="Open-btn2" onclick="OpenNavigation2()" type="button"> <a href="#">Search <img
+                                        src="./CSS/image/icons8-search.svg" /></a> </button>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header section end -->
+
+    <!-- Banner section start -->
+    <div class="banner-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-8 col-sm-8">
+                    <div class="banner-left-part">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <span class="hero-label">Deal Flow CRM Software</span>
+                                <h1 class="herojs">Build a CRM
+                                    specifically foe
+                                    manage flow.</h1>
+                                <p>Get a clear, unbiased audit of your facebook
+                                    marketing investment - using plain marketing speak.</p>
+                            </div>
+                            <div class="banner-btn">
+                                <a href="#" class="bnr hero-btn">Get Started for Free</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="banner-right-part">
+                        <div class="banner-image">
+                            <img src="./CSS/image/Image.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Banner section end -->
+
+    <!-- Brand logo section start -->
+    <div class="brand-logo-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <img src="./CSS/image/Clients.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Brand logo section end -->
+
+    <!-- Feature section start -->
+    <div class="feature-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12 offset-lg-1">
+                    <div class="feature-item">
+                        <div class="feature-text">
+                            <h3>Real-time updates</h3>
+                            <p>Keep everyone connected all the time with continuously updated data.</p>
+                        </div>
+                        <div class="img">
+                            <img src="./CSS/image/real1.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="feature-item2">
+                        <div class="feature-text">
+                            <h3>Visitors overview</h3>
+                            <p>Keep everyone connected all the time with continuously updated data.</p>
+                        </div>
+                        <div class="img">
+                            <img src="./CSS/image/visitor2.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12 col-sm-12 offset-lg-1">
+                    <div class="feature-item3">
+                        <div class="feature-text">
+                            <h3>Overview</h3>
+                            <p>Keep everyone connected all the time with continuously updated data.</p>
+                        </div>
+                        <div class="img">
+                            <img src="./CSS/image/overview.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="feature-item4">
+                        <div class="feature-text">
+                            <h3>Total Sales</h3>
+                            <p>Keep everyone connected all the time with continuously updated data.</p>
+                        </div>
+                        <div class="img">
+                            <img src="./CSS/image/sales.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature section end -->
+
+    <!-- service section start -->
+    <div class="service-section-wrap" pt-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="service-title-wrap text-center text-white">
+                        <h6>SERVICE WE PROVIDE</h6>
+                        <h3>CRM simple yet powerful</h3>
+                        <p>Donec luctus, risus a ornare ultrices, lacus ligula pellentesque massa, sit amet elementum
+                            libero ac ipsum. Nulla facilisi.
+                        </p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-11 col-md-11 col-sm-11 mx-auto">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="service-content-wrap">
+                                        <div class="service-content">
+                                            <div class="service-img">
+                                                <img src="./CSS/image/icon.svg" alt="">
+                                            </div>
+                                            <div class="service-text">
+                                                <h4>Simplied card issuing</h4>
+                                                <p>Maecenas accumsan, elit id hendrerit convallis, lectus lacus
+                                                    fermentum nisi.</p>
+                                            </div>
+                                            <div class="image-overlay">
+                                            </div>
+                                            <div class="image-overlay2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="service-content-wrap">
+                                        <div class="service-content">
+                                            <div class="service-img">
+                                                <img src="./CSS/image/service2.svg" alt="">
+                                            </div>
+                                            <div class="service-text">
+                                                <h4>Simplied card issuing</h4>
+                                                <p>Maecenas accumsan, elit id hendrerit convallis, lectus lacus
+                                                    fermentum nisi.</p>
+                                            </div>
+                                        </div>
+                                        <div class="image-overlay3">
+                                        </div>
+                                        <div class="image-overlay4">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="service-content-wrap">
+                                        <div class="service-content">
+                                            <div class="service-img">
+                                                <img src="./CSS/image/service3.svg" alt="">
+                                            </div>
+                                            <div class="service-text">
+                                                <h4>Simplied card issuing</h4>
+                                                <p>Maecenas accumsan, elit id hendrerit convallis, lectus lacus
+                                                    fermentum nisi.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-6 pt-20">
+                                    <div class="service-content-wrap">
+                                        <div class="service-content">
+                                            <div class="service-img">
+                                                <img src="./CSS/image/service4.svg" alt="">
+                                            </div>
+                                            <div class="service-text">
+                                                <h4>Simplied card issuing</h4>
+                                                <p>Maecenas accumsan, elit id hendrerit convallis, lectus lacus
+                                                    fermentum nisi.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-6 pt-20">
+                                    <div class="service-content-wrap">
+                                        <div class="service-content">
+                                            <div class="service-img">
+                                                <img src="./CSS/image/service5.svg" alt="">
+                                            </div>
+                                            <div class="service-text">
+                                                <h4>Simplied card issuing</h4>
+                                                <p>Maecenas accumsan, elit id hendrerit convallis, lectus lacus
+                                                    fermentum nisi.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-6 pt-20">
+                                    <div class="service-content-wrap">
+                                        <div class="service-content">
+                                            <div class="service-img">
+                                                <img src="./CSS/image/service6.svg" alt="">
+                                            </div>
+                                            <div class="service-text">
+                                                <h4>Simplied card issuing</h4>
+                                                <p>Maecenas accumsan, elit id hendrerit convallis, lectus lacus
+                                                    fermentum nisi.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service section end -->
+
+    <!-- Video section start -->
+    <div class="video-section-wrap pt-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12 mx-auto">
+                    <div class="video-section-title text-center text-white">
+                        <h3>Grows with <span><img src="./CSS/image/white.svg" alt=""></span></h3>
+                        <p>usinesses are almost always motivated to grow. Teams multiply, opportunities expand, and your
+                            business process can become more complex. A free CRM system, such as Freshworks CRM, scales
+                            with your business</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 mx-auto pt-20">
+                    <div class="video-wrap">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/xirkCopfX6c"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video section end -->
+
+    <!-- Salles section start -->
+    <div class="sales-section-wrap text-center text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="sales-section-title">
+                        <h5>SALES AND GROWTH</h5>
+                        <h3>Increase
+                            your reach
+                        </h3>
+                    </div>
+                    <div class="circle-bar-wrap">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="circle-bar-content text-white text-center">
+                                    <div class="circle-bar-image">
+                                        <img src="./CSS/image/circle bar.svg" alt="">
+                                    </div>
+                                    <div class="progress-description">
+                                        <h4>Product sales</h4>
+                                        <p>Charles Jeffrey up the kyver loo in my flat blimey.!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="circle-bar-content text-white text-center">
+                                    <div class="circle-bar-image">
+                                        <img src="./CSS/image/circle bar (1).svg" alt="">
+                                    </div>
+                                    <div class="progress-description">
+                                        <h4>Project Pending</h4>
+                                        <p>Charles Jeffrey up the kyver loo in my flat blimey.!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="circle-bar-content text-white text-center">
+                                    <div class="circle-bar-image">
+                                        <img src="./CSS/image/circle bar (2).svg" alt="">
+                                    </div>
+                                    <div class="progress-description">
+                                        <h4>Project completed</h4>
+                                        <p>Charles Jeffrey up the kyver loo in my flat blimey.!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="circle-bar-content text-white text-center">
+                                    <div class="circle-bar-image">
+                                        <img src="./CSS/image/circle bar (3).svg" alt="">
+                                    </div>
+                                    <div class="progress-description">
+                                        <h4>Project Rejected</h4>
+                                        <p>Charles Jeffrey up the kyver loo in my flat blimey.!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Salles section end -->
+
+    <!-- Newsletter section start -->
+    <div class="newsletter-section-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-11 col-md-11 col-sm-11 mx-auto">
+                    <div class="newsletter-section-content-wrap">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="newsletter-content text-white">
+                                    <h3>Want To Get Started?</h3>
+                                    <p>The free demo comes with no commitments
+                                        and no credit card required.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="newsletter-form">
+                                    <div class="cta-input-box">
+                                        <span>
+                                            <img src="./CSS/image/email.svg" alt="">
+                                        </span>
+                                        <input type="email" placeholder="Add your email" required>
+                                    </div>
+                                    <button>
+                                        <img src="./CSS/image/arrow.svg" alt="">
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter section start -->
+
+    <!-- Testimunial section start -->
+    <div class="testimunial-section-wrap text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <h3>Our happy clients</h3>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="testimunial-slider-arrow">
+                        <div class="left-arrow">
+                            <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.1407 5.14062L2.94088 5.14062L5.95575 2.14037C6.29215 1.80556 6.29344 1.26145 5.95863 0.925044C5.62381 0.5886 5.07966 0.587354 4.74325 0.922123L0.252844 5.39087L0.25207 5.39168C-0.0834729 5.72649 -0.0845472 6.27237 0.251984 6.6083L0.252758 6.60911L4.74317 11.0779C5.07953 11.4126 5.62368 11.4114 5.95854 11.0749C6.29335 10.7385 6.29206 10.1944 5.95566 9.85961L2.94088 6.85936L21.1407 6.85937C21.6153 6.85937 22 6.47463 22 5.99999C22 5.52536 21.6153 5.14062 21.1407 5.14062Z"
+                                    fill="white" />
+                            </svg>
+
+                        </div>
+                        <div class="right-arrow">
+                            <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.859347 6.85938L19.0591 6.85938L16.0443 9.85963C15.7079 10.1944 15.7066 10.7386 16.0414 11.075C16.3762 11.4114 16.9203 11.4126 17.2567 11.0779L21.7472 6.60913C21.7475 6.60888 21.7477 6.60858 21.7479 6.60832C22.0835 6.27351 22.0845 5.72763 21.748 5.3917C21.7477 5.39144 21.7475 5.39114 21.7472 5.39089L17.2568 0.922143C16.9205 0.587416 16.3763 0.588576 16.0415 0.925064C15.7066 1.26147 15.7079 1.80558 16.0443 2.14039L19.0591 5.14064L0.859347 5.14064C0.384714 5.14063 -2.85798e-05 5.52538 -2.86213e-05 6.00001C-2.86628e-05 6.47464 0.384714 6.85938 0.859347 6.85938Z"
+                                    fill="#141415" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-content-wrap">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-12 mx-auto d-flex">
+                        <div class="slider-card-item">
+                            <div class="slidet-text">
+                                <p>“Our team deals with sensitive data and our customers trust us to keep it all secure.
+                                    That's why we trust Stratus, because we can't afford any data loss or outage.”</p>
+                            </div>
+                            <div class="slider-info">
+                                <div class="author-info d-flex">
+                                    <div class="author-profile d-flex">
+                                        <img src="./CSS/image/author.svg" alt="">
+                                        <div class="author-desc">
+                                            <h4>Shiyla Doe</h4>
+                                            <h6>Manager, MENY</h6>
+                                        </div>
+                                    </div>
+
+                                    <div class="testimonial-card-logo">
+                                        <img src="./CSS/image/white.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider-card-item">
+                            <div class="slidet-text">
+                                <p>“Our team deals with sensitive data and our customers trust us to keep it all secure.
+                                    That's why we trust Stratus, because we can't afford any data loss or outage.”</p>
+                            </div>
+                            <div class="slider-info">
+                                <div class="author-info d-flex">
+                                    <div class="author-profile d-flex">
+                                        <img src="./CSS/image/author.svg" alt="">
+                                        <div class="author-desc">
+                                            <h4>Shiyla Doe</h4>
+                                            <h6>Manager, MENY</h6>
+                                        </div>
+                                    </div>
+
+                                    <div class="testimonial-card-logo">
+                                        <img src="./CSS/image/white.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimunial section end -->
+
+    <!-- Frame section start -->
+    <div class="frame-section">
+        <div class="containar">
+            <div class="row">
+
+                <div class="frame-part d-flex mx-auto">
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <ul>
+                            <h5>COMPANY</h5>
+                            <li>About Us</li>
+                            <li>Careers</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-part">
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <ul>
+                                <h5>PRODUCT</h5>
+                                <li>Features</li>
+                                <li>Pricing</li>
+                                <li>Login</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="resource-part">
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <ul>
+                                <h5>RESOURCES</h5>
+                                <li>Help</li>
+                                <li>Blog</li>
+                                <li>Status</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="performance-part">
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <ul>
+                                <h5>PERFORMANCE</h5>
+                                <li>Media</li>
+                                <li>Reach</li>
+                                <li>Creative</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="get-in-touch-part">
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <ul>
+                                <h5>GET IN TOUCH</h5>
+                                <li>+007745444543</li>
+                                <li>hello@mail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Frame section end -->
+
+    <!-- Footer section start -->
+    <div class="footer-section">
+        <div class="containar">
+            <div class="row">
+                <div class="col-lg-7 col-md-8 col-sm-11 mx-auto d-flex">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer-img">
+                            <img src="./CSS/image/Logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-sm-6">
+                        <div class="footer-text">
+                            <p>All rights reserved UIHUT 2021</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer section end -->
+
+    <!-- Scroll to top start -->
+    <div class="scroll-to-top">
+        <a href="#scroll" class="scroll-btn"><img src="./CSS/image/up-arrow.png" alt=""></a>
+    </div>
+    <!-- Scroll to top end -->
+
+    <script src="./CSS/vendor/jquery-3.6.0.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
